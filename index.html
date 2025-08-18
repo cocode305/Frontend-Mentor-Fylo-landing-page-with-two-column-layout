@@ -19,24 +19,43 @@
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="bg-gray-100 text-gray-900 font-openSans">
+  <header>
+    <div class="container mx-auto px-5 py-6"> <!-- container for the header section -->
+      <!-- Navigation Bar -->
+      <nav class="flex justify-between items-center">
+        <div><img class="w-20 mobile-lg:w-24 tablet-sm:w-32" src="images/logo.svg" alt="Logo"></div>
+        <ul class="flex space-x-4 text-base text-2xs mobile:text-sm tablet-sm:text-lg">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
 
-  Features
-  Team
-  Sign In
+      <!-- Hero Section Container -->
+      <div class="flex flex-col laptop:flex-row laptop:gap-16 items-center mt-24">
+        <!-- Hero Image -->
+         <div class="laptop:order-2"><img src="images/illustration-1.svg" alt="Hero Image"></div>
 
-  All your files in one secure location, accessible anywhere.
+         <!-- Hero Contents -->
+          <div class="text-center laptop:text-left mt-6 text-base laptop:order-1">
+            <h1 class="text-xl mobile-lg:text-2xl tablet-sm:text-3xl font-black font-raleway">All your files in one secure location, accessible anywhere.</h1>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+            <p class="text-sm tablet-sm:text-lg mt-7">Fylo stores your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family, and co-workers.</p>
 
-  Get Started
+            <form action="" class="laptop:mt-10">
+              <div class="flex flex-col laptop:flex-row laptop:items-center laptop:gap-5">
+                <input type="email" name="email" class="textbox mt-10 laptop:mt-0" id="email" placeholder="Enter your email">
+                <button type="submit" class=" btn bg-primary mt-3 laptop:mt-0 laptop:w-2/3">Get Started</button>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </header>
 
   Stay productive, wherever you are
 
@@ -72,12 +91,5 @@
   Contact Us
   Terms
   Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
 </html>

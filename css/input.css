@@ -1,6 +1,32 @@
 @import "tailwindcss";
 
 @theme {
+
+    /* Breakpoints */
+    --breakpoint-mobile: 375px;
+    --breakpoint-mobile-lg: 425px;
+    --breakpoint-tablet-sm: 640px;
+    --breakpoint-tablet: 768px;
+    --breakpoint-laptop: 1024px;
+
+    /* Colors */
+    --color-base: hsl(243, 87%, 12%);
+    --color-primary: hsl(224, 93%, 58%);
+    --color-secondary: hsl(238, 22%, 44%);
+    --color-accent: hsl(170, 45%, 43%);
+    --color-neutral-light: hsl(240, 75%, 98%);
+    --color-neutral-grey: hsl(0, 0%, 75%);
+
     --font-openSans: 'Open Sans', sans-serif;
     --font-raleway: 'Raleway', serif;
+}
+
+@layer components {
+    .btn {
+        @apply block w-full px-6 py-3 laptop:py-2 text-center text-white rounded cursor-pointer font-semibold transition-colors duration-300 tablet-sm:text-lg;
+    }
+
+    .textbox {
+        @apply w-full outline-0 p-3 laptop:py-2 block border ring-neutral-light rounded focus:ring-2 focus:ring-primary transition-colors duration-300 text-lg;
+    }
 }
