@@ -22,7 +22,7 @@
 </head>
 <body class="bg-gray-100 text-gray-900 font-openSans">
   <header>
-    <div class="container mx-auto px-5 py-6"> <!-- container for the header section -->
+    <div class="container mx-auto px-5 py-6 tablet:p-10"> <!-- container for the header section -->
       <!-- Navigation Bar -->
       <nav class="flex justify-between items-center">
         <div><img class="w-20 mobile-lg:w-24 tablet-sm:w-32" src="images/logo.svg" alt="Logo"></div>
@@ -57,21 +57,39 @@
     </div>
   </header>
 
-  Stay productive, wherever you are
+  <main>
+    <section class=" bg-[url('../images/bg-curve-mobile.svg')] laptop:bg-[url('../images/bg-curve-desktop.svg)] bg-no-repeat bg-cover bg-center mt-24 pt-16">
+      <div class="container mx-auto px-5 py-6 tablet:p-10 laptop:flex laptop:items-center laptop:gap-16">
+        <!-- Image Container -->
+        <div class="laptop:order-2"><img src="images/illustration-2.svg" alt="illustration-2"></div>
+        <!-- Contents -->
+        <div class="laptop:order-1 mt-16 laptop:mt-0 text-secondary">
+          <h1 class="font-black font-raleway text-sm text-base mobile-lg:text-lg tablet-sm:text-xl tablet:text-3xl text-center">Stay productive, wherever you are</h1>
+          <p class="text-xs mobile-lg:text-sm tablet-sm:text-lg tablet:text-xl mt-8">Never let location be an issue when accessing your files. Fylo has you
+          covered for all of your file storage needs.</p>
+          <p class="text-xs mobile-lg:text-sm tablet-sm:text-lg tablet:text-xl mt-4">Securely share files and folders with friends, family and colleagues for
+          live collaboration. No email attachments required!</p>
+          <div class="mt-8 text-center"><button class="inline-flex items-center gap-2 cursor-pointer py-2 border-b-2 border-accent text-accent tablet:text-xl">See how Fylo works <span><img src="images/icon-arrow.svg" alt="icon-arrow"></span></button></div>
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+          <!-- Testimonial -->
+          <div class="mt-16 bg-white p-6 tablet:p-8 rounded-lg shadow-lg w-64 mobile-lg:w-80 tablet-sm:w-xl laptop:w-xl mx-auto laptop:mx-0 text-base">
+            <span><img class="w-5 mobile-lg:w-8" src="images/icon-quotes.svg" alt="icon-quotes"></span>
+            <p class="text-xs mobile-lg:text-sm tablet-sm:text-lg tablet:text-xl mt-3">Fylo has improved our team productivity by an order of magnitude. Since
+            making the switch our team has become a well-oiled collaboration machine.</p>
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
+            <div class="flex items-center gap-4 mt-6">
+              <!-- User Profile card -->
+              <span><img class="w-10 tablet-sm:w-16 h-10 tablet-sm:h-16 rounded-full inline-block" src="images/avatar-testimonial.jpg" alt=""></span>
+              <span>
+                <h3 class="text-xs tablet-sm:text-lg tablet:text-xl font-raleway font-black">Kyle Burton</h3>
+                <p class="text-xs tablet-sm:text-sm tablet:text-lg">Founder & CEO, Huddle</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   Get early access today
 
