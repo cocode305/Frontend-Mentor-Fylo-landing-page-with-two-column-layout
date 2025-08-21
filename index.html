@@ -48,8 +48,8 @@
 
             <form action="" class="laptop:mt-10">
               <div class="flex flex-col laptop:flex-row laptop:items-center laptop:gap-5">
-                <input type="email" name="email" class="textbox mt-10 laptop:mt-0" id="email" placeholder="Enter your email">
-                <button type="submit" class=" btn bg-primary mt-3 laptop:mt-0 laptop:w-2/3">Get Started</button>
+                <input type="email" name="email" class="textbox mt-10 laptop:mt-0 border ring-neutral-grey" id="email" placeholder="Enter your email" required>
+                <button type="submit" class=" btn bg-primary hover:opacity-80 hover:shadow-lg mt-3 laptop:mt-0 laptop:w-2/3">Get Started</button>
               </div>
             </form>
           </div>
@@ -64,10 +64,10 @@
         <div class="laptop:order-2"><img src="images/illustration-2.svg" alt="illustration-2"></div>
         <!-- Contents -->
         <div class="laptop:order-1 mt-16 laptop:mt-0 text-secondary">
-          <h1 class="font-black font-raleway text-sm text-base mobile-lg:text-lg tablet-sm:text-xl tablet:text-3xl text-center">Stay productive, wherever you are</h1>
-          <p class="text-xs mobile-lg:text-sm tablet-sm:text-lg tablet:text-xl mt-8">Never let location be an issue when accessing your files. Fylo has you
+          <h1 class="font-black font-raleway text-sm text-base mobile-lg:text-lg tablet-sm:text-3xl tablet:text-3xl text-center">Stay productive, wherever you are</h1>
+          <p class="text-xs mobile-lg:text-sm tablet-sm:text-lg tablet:text-2xl mt-8">Never let location be an issue when accessing your files. Fylo has you
           covered for all of your file storage needs.</p>
-          <p class="text-xs mobile-lg:text-sm tablet-sm:text-lg tablet:text-xl mt-4">Securely share files and folders with friends, family and colleagues for
+          <p class="text-xs mobile-lg:text-sm tablet-sm:text-2xl tablet:text-xl mt-4">Securely share files and folders with friends, family and colleagues for
           live collaboration. No email attachments required!</p>
           <div class="mt-8 text-center"><button class="inline-flex items-center gap-2 cursor-pointer py-2 border-b-2 border-accent text-accent tablet:text-xl">See how Fylo works <span><img src="images/icon-arrow.svg" alt="icon-arrow"></span></button></div>
 
@@ -89,25 +89,71 @@
         </div>
       </div>
     </section>
+
+    <!-- NewsLetter Section -->
+     <section class="bg-secondary">
+      <div class="container mx-auto mt-20 px-5 py-20 laptop:py-28 tablet:p-10 laptop:flex laptop:items-center laptop:gap-24">
+        <!-- newsletter-content -->
+        <div class="text-white laptop:w-2/3 text-center laptop:text-left">
+          <h3 class="font-black font-raleway text-sm mobile-lg:text-3xl tablet-sm:text-3xl tablet:text-3xl">Get early access today</h3>
+          <p class="text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl mt-4">It only takes a minute to sign up and our free starter tier is extremely generous.
+          If you have any questions, our support team would be happy to help you.</p>
+        </div>
+
+        <form action="" class="laptop:w-1/2 mt-10 laptop:mt-0">
+          <div class="form-container">
+            <input class="textbox bg-white mt-10 laptop:mt-0 focus:ring-primary  has-required:ring-red-700" type="email" name="" id="" placeholder="example@email.com" required>
+            <button class="btn bg-primary hover:opacity-80 hover:shadow-lg mt-5 laptop:w-72" type="submit">Get Started For Free</button>
+          </div>
+        </form>
+      </div>
+     </section>
   </main>
 
-  Get early access today
+  <footer class="bg-base">
+    <div class="container mx-auto px-5 py-24 text-white">
+      <div class="flex flex-col">
+        <div><img class="filter invert brightness-0 contrast-100" src="images/logo.svg" alt="Logo"></div>
+      </div>
+      <div class="laptop:flex laptop:justify-between items-start mt-10">
+        <!-- Contact Links -->
+        <div>
+          <div class="flex items-center gap-3 mt-0">
+            <span><img src="images/icon-phone.svg" alt="Phone icon"></span>
+            <a class="text-white hover:text-secondary ease-in-out duration-500" href="tel:+1-543-123-4567">Phone: +1-543-123-4567</a>
+          </div>
+          <div class="flex items-center gap-3 mt-3">
+            <span><img src="images/icon-email.svg" alt="Mail icon"></span>
+            <a class="hover:text-secondary ease-in-out duration-500" href="mailto:example@fylo.com">example@fylo.com</a>
+          </div>
+        </div>
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
+        <ul class="space-y-2 mt-10 laptop:mt-0">
+          <li><a class="hover:text-secondary text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl" href="#">About Us</a></li>
+          <li><a class=" hover:text-secondary text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl ease-in-out duration-500" href="#">Jobs</a></li>
+          <li><a class="hover:text-secondary text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl ease-in-out duration-500" href="#">Press</a></li>
+          <li><a class="hover:text-secondary text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl ease-in-out duration-500" href="#">Blog</a></li>
+        </ul>
 
-  Get Started For Free
+        <ul class="space-y-2 mt-10 laptop:mt-0">
+          <li><a class="hover:text-secondary text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl ease-in-out duration-500" href="#">Contact Us</a></li>
+          <li><a class="hover:text-secondary text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl ease-in-out duration-500" href="#">Terms</a></li>
+          <li><a class="hover:text-secondary text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl ease-in-out duration-500" href="#">Privacy</a></li>
+        </ul>
 
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
+        <ul class="space-x-2 mt-16 laptop:mt-0 text-center">
+          <li class="inline-flex items-center justify-center w-10 h-10 rounded-full border "><a
+              class="hover:text-secondary text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl ease-in-out duration-500" href="#"><i
+                class="fa-brands fa-facebook-f"></i></a></li>
+          <li class="inline-flex items-center justify-center w-10 h-10 rounded-full border "><a
+              class="hover:text-secondary text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl ease-in-out duration-500" href="#"><i
+                class="fa-brands fa-twitter"></i></a></li>
+          <li class="inline-flex items-center justify-center w-10 h-10 rounded-full border "><a
+              class="hover:text-secondary text-xs mobile-lg:text-xl tablet-sm:text-2xl tablet:text-xl transition ease-in-out duration-500" href="#"><i
+                class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -27,6 +27,6 @@
     }
 
     .textbox {
-        @apply w-full outline-0 p-3 laptop:py-2 block border ring-neutral-light rounded focus:ring-2 focus:ring-primary transition-colors duration-300 text-lg;
+        @apply w-full outline-0 p-3 laptop:py-2 block  rounded focus:ring-2 focus:ring-primary transition-colors duration-300 text-lg;
     }
 }
